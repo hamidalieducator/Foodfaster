@@ -98,7 +98,7 @@ footer button:hover{transform:scale(1.05)}
 <h3>Water</h3><p>Prepared fresh with quality ingredients and served ready to enjoy.</p><b>Rs 80</b>
 <div><button onclick='chg(25,-1)'>-</button> <span id='q25'>0</span> <button onclick='chg(25,1)'>+</button></div></div><div class='card' data-name='chocolate cake'>
 <img src='images/27.png'>
-<h3>Chocolate Cake</h3><p>Prepared fresh with quality ingredients and served ready to enjoy.</p><b>Rs 350</b>
+<h3>Chocolate Cake</h3><p>Prepared fresh with quality ingredients and served ready to enjoy.</p><b>Rs 350</b><div style="height:40px;"></div>
 <div><button onclick='chg(27,-1)'>-</button> <span id='q27'>0</span> <button onclick='chg(27,1)'>+</button></div></div></div><footer><b>Total Rs <span id=t>0</span></b><button onclick='o()'>Order WhatsApp</button></footer><script>
 const owner='923275769505',menu=[['Small Chicken Pizza',899],['Medium Chicken Pizza',1499],['Large Chicken Pizza',2199],['Small Pepperoni Pizza',999],['Medium Pepperoni Pizza',1699],['Large Pepperoni Pizza',2399],['Zinger Burger',650],['Chicken Cheese Burger',750],['Beef Burger',720],['Double Beef Burger',980],['Crispy Burger',580],['Small Fries',180],['Regular Fries',280],['Large Fries',380],['Loaded Fries',450],['Chicken Shawarma',320],['Beef Shawarma',380],['Club Sandwich',480],['Hot Dog',300],['Chicken Wrap',390],['2pc Fried Chicken',450],['4pc Fried Chicken',850],['Family Bucket',1999],['Coke',120],['Sprite',120],['Water',80],['Chocolate Cake',350],['Ice Cream Cup',220]],cart={};
 function chg(i,d){cart[i]=Math.max(0,(cart[i]||0)+d);document.getElementById('q'+i).textContent=cart[i];u();}
