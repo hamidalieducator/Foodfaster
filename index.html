@@ -101,11 +101,7 @@ footer button:hover{transform:scale(1.05)}
 <h3>Chocolate Cake</h3><p>Prepared fresh with quality ingredients and served ready to enjoy.</p><b>Rs 350</b>
 <div><button onclick='chg(26,-1)'>-</button> <span id='q26'>0</span> <button onclick='chg(26,1)'>+</button></div></div><div class='card' data-name='ice cream cup'>
 <img src='images/28.png'>
-<h3>Ice Cream Cup</h3><p>Prepared fresh with quality ingredients and served ready to enjoy.</p><b>Rs 220</b> <style>
-.space {
-    height: 40px;
-}
-</style>
+<h3>Ice Cream Cup</h3><p>Prepared fresh with quality ingredients and served ready to enjoy.</p><b>Rs 220</b> 
 
 <div class="space"></div>
 <div><button onclick='chg(27,-1)'>-</button> <span id='q27'>0</span> <button onclick='chg(27,1)'>+</button></div></div></div><footer><b>Total Rs <span id=t>0</span></b><button onclick='o()'>Order WhatsApp</button></footer><script>
@@ -121,4 +117,8 @@ c.style.display=(n.includes(v)||t.includes(v))?'block':'none';
 });
 }
 function o(){let l=[],tt=0;for(let i in cart)if(cart[i]){l.push(cart[i]+' x '+menu[i][0]+' = Rs '+cart[i]*menu[i][1]);tt+=cart[i]*menu[i][1];}if(!l.length)return alert('Select items');location='https://wa.me/'+owner+'?text='+encodeURIComponent('FoodFaster Order\n\n'+l.join('\n')+'\n\nTotal: Rs '+tt);}
+<div style="height:100px;"></div>
+<footer>
+    ...
+</footer>
 </script></body></html>
