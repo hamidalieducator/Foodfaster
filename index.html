@@ -1,0 +1,118 @@
+<!doctype html><html><head><meta name=viewport content='width=device-width,initial-scale=1'><style>
+body{font-family:Arial;margin:0;background:#f3f3f3}header{background:#ff6b00;color:#fff;padding:15px;text-align:center;position:sticky;top:0}#s{width:90%;display:block;margin:12px auto;padding:14px;border:0;border-radius:25px;font-size:16px;box-shadow:0 2px 8px rgba(0,0,0,.1)}.card{
+background:#fff;
+margin:12px auto;
+padding:15px;
+border-radius:16px;
+box-shadow:0 3px 10px rgba(0,0,0,.08);
+text-align:center;
+max-width:420px;
+}img{
+display:block;
+width:110px;
+height:110px;
+object-fit:cover;
+margin:0 auto 12px;
+border-radius:12px;
+}footer{position:fixed;bottom:0;left:0;right:0;background:#fff;padding:12px;display:flex;justify-content:center;align-items:center;box-shadow:0 -3px 15px rgba(0,0,0,.12);z-index:10}
+footer b{position:absolute;left:15px}
+footer button{background:#25D366;color:white;border:0;padding:14px 35px;border-radius:30px;font-size:17px;font-weight:bold;box-shadow:0 5px 15px rgba(37,211,102,.4);cursor:pointer}
+footer button:hover{transform:scale(1.05)}
+</style></head><body><header><h2>FoodFaster</h2></header><div id=list><div class='card' data-name='small chicken pizza'>
+<img src='images/1.png'>
+<h3>Small Chicken Pizza</h3><p>Freshly baked with mozzarella cheese, rich tomato sauce, and premium toppings. Perfect for sharing or enjoying yourself.</p><b>Rs 899</b>
+<div><button onclick='chg(0,-1)'>-</button> <span id='q0'>0</span> <button onclick='chg(0,1)'>+</button></div></div><div class='card' data-name='medium chicken pizza'>
+<img src='images/2.png'>
+<h3>Medium Chicken Pizza</h3><p>Freshly baked with mozzarella cheese, rich tomato sauce, and premium toppings. Perfect for sharing or enjoying yourself.</p><b>Rs 1499</b>
+<div><button onclick='chg(1,-1)'>-</button> <span id='q1'>0</span> <button onclick='chg(1,1)'>+</button></div></div><div class='card' data-name='large chicken pizza'>
+<img src='images/3.png'>
+<h3>Large Chicken Pizza</h3><p>Freshly baked with mozzarella cheese, rich tomato sauce, and premium toppings. Perfect for sharing or enjoying yourself.</p><b>Rs 2199</b>
+<div><button onclick='chg(2,-1)'>-</button> <span id='q2'>0</span> <button onclick='chg(2,1)'>+</button></div></div><div class='card' data-name='small pepperoni pizza'>
+<img src='images/4.png'>
+<h3>Small Pepperoni Pizza</h3><p>Freshly baked with mozzarella cheese, rich tomato sauce, and premium toppings. Perfect for sharing or enjoying yourself.</p><b>Rs 999</b>
+<div><button onclick='chg(3,-1)'>-</button> <span id='q3'>0</span> <button onclick='chg(3,1)'>+</button></div></div><div class='card' data-name='medium pepperoni pizza'>
+<img src='images/5.png'>
+<h3>Medium Pepperoni Pizza</h3><p>Freshly baked with mozzarella cheese, rich tomato sauce, and premium toppings. Perfect for sharing or enjoying yourself.</p><b>Rs 1699</b>
+<div><button onclick='chg(4,-1)'>-</button> <span id='q4'>0</span> <button onclick='chg(4,1)'>+</button></div></div><div class='card' data-name='large pepperoni pizza'>
+<img src='images/6.png'>
+<h3>Large Pepperoni Pizza</h3><p>Freshly baked with mozzarella cheese, rich tomato sauce, and premium toppings. Perfect for sharing or enjoying yourself.</p><b>Rs 2399</b>
+<div><button onclick='chg(5,-1)'>-</button> <span id='q5'>0</span> <button onclick='chg(5,1)'>+</button></div></div><div class='card' data-name='zinger burger'>
+<img src='images/7.png'>
+<h3>Zinger Burger</h3><p>Served with fresh lettuce, creamy sauce, and a soft toasted bun for a satisfying meal.</p><b>Rs 650</b>
+<div><button onclick='chg(6,-1)'>-</button> <span id='q6'>0</span> <button onclick='chg(6,1)'>+</button></div></div><div class='card' data-name='chicken cheese burger'>
+<img src='images/8.png'>
+<h3>Chicken Cheese Burger</h3><p>Served with fresh lettuce, creamy sauce, and a soft toasted bun for a satisfying meal.</p><b>Rs 750</b>
+<div><button onclick='chg(7,-1)'>-</button> <span id='q7'>0</span> <button onclick='chg(7,1)'>+</button></div></div><div class='card' data-name='beef burger'>
+<img src='images/9.png'>
+<h3>Beef Burger</h3><p>Served with fresh lettuce, creamy sauce, and a soft toasted bun for a satisfying meal.</p><b>Rs 720</b>
+<div><button onclick='chg(8,-1)'>-</button> <span id='q8'>0</span> <button onclick='chg(8,1)'>+</button></div></div><div class='card' data-name='double beef burger'>
+<img src='images/10.png'>
+<h3>Double Beef Burger</h3><p>Served with fresh lettuce, creamy sauce, and a soft toasted bun for a satisfying meal.</p><b>Rs 980</b>
+<div><button onclick='chg(9,-1)'>-</button> <span id='q9'>0</span> <button onclick='chg(9,1)'>+</button></div></div><div class='card' data-name='crispy burger'>
+<img src='images/11.png'>
+<h3>Crispy Burger</h3><p>Served with fresh lettuce, creamy sauce, and a soft toasted bun for a satisfying meal.</p><b>Rs 580</b>
+<div><button onclick='chg(10,-1)'>-</button> <span id='q10'>0</span> <button onclick='chg(10,1)'>+</button></div></div><div class='card' data-name='small fries'>
+<img src='images/12.png'>
+<h3>Small Fries</h3><p>Golden crispy fries seasoned to perfection. Loaded version includes cheese and special sauce.</p><b>Rs 180</b>
+<div><button onclick='chg(11,-1)'>-</button> <span id='q11'>0</span> <button onclick='chg(11,1)'>+</button></div></div><div class='card' data-name='regular fries'>
+<img src='images/13.png'>
+<h3>Regular Fries</h3><p>Golden crispy fries seasoned to perfection. Loaded version includes cheese and special sauce.</p><b>Rs 280</b>
+<div><button onclick='chg(12,-1)'>-</button> <span id='q12'>0</span> <button onclick='chg(12,1)'>+</button></div></div><div class='card' data-name='large fries'>
+<img src='images/14.png'>
+<h3>Large Fries</h3><p>Golden crispy fries seasoned to perfection. Loaded version includes cheese and special sauce.</p><b>Rs 380</b>
+<div><button onclick='chg(13,-1)'>-</button> <span id='q13'>0</span> <button onclick='chg(13,1)'>+</button></div></div><div class='card' data-name='loaded fries'>
+<img src='images/15.png'>
+<h3>Loaded Fries</h3><p>Golden crispy fries seasoned to perfection. Loaded version includes cheese and special sauce.</p><b>Rs 450</b>
+<div><button onclick='chg(14,-1)'>-</button> <span id='q14'>0</span> <button onclick='chg(14,1)'>+</button></div></div><div class='card' data-name='chicken shawarma'>
+<img src='images/16.png'>
+<h3>Chicken Shawarma</h3><p>Prepared fresh with quality ingredients and served ready to enjoy.</p><b>Rs 320</b>
+<div><button onclick='chg(15,-1)'>-</button> <span id='q15'>0</span> <button onclick='chg(15,1)'>+</button></div></div><div class='card' data-name='beef shawarma'>
+<img src='images/17.png'>
+<h3>Beef Shawarma</h3><p>Prepared fresh with quality ingredients and served ready to enjoy.</p><b>Rs 380</b>
+<div><button onclick='chg(16,-1)'>-</button> <span id='q16'>0</span> <button onclick='chg(16,1)'>+</button></div></div><div class='card' data-name='club sandwich'>
+<img src='images/18.png'>
+<h3>Club Sandwich</h3><p>Prepared fresh with quality ingredients and served ready to enjoy.</p><b>Rs 480</b>
+<div><button onclick='chg(17,-1)'>-</button> <span id='q17'>0</span> <button onclick='chg(17,1)'>+</button></div></div><div class='card' data-name='hot dog'>
+<img src='images/19.png'>
+<h3>Hot Dog</h3><p>Prepared fresh with quality ingredients and served ready to enjoy.</p><b>Rs 300</b>
+<div><button onclick='chg(18,-1)'>-</button> <span id='q18'>0</span> <button onclick='chg(18,1)'>+</button></div></div><div class='card' data-name='chicken wrap'>
+<img src='images/20.png'>
+<h3>Chicken Wrap</h3><p>Prepared fresh with quality ingredients and served ready to enjoy.</p><b>Rs 390</b>
+<div><button onclick='chg(19,-1)'>-</button> <span id='q19'>0</span> <button onclick='chg(19,1)'>+</button></div></div><div class='card' data-name='2pc fried chicken'>
+<img src='images/21.png'>
+<h3>2pc Fried Chicken</h3><p>Prepared fresh with quality ingredients and served ready to enjoy.</p><b>Rs 450</b>
+<div><button onclick='chg(20,-1)'>-</button> <span id='q20'>0</span> <button onclick='chg(20,1)'>+</button></div></div><div class='card' data-name='4pc fried chicken'>
+<img src='images/22.png'>
+<h3>4pc Fried Chicken</h3><p>Prepared fresh with quality ingredients and served ready to enjoy.</p><b>Rs 850</b>
+<div><button onclick='chg(21,-1)'>-</button> <span id='q21'>0</span> <button onclick='chg(21,1)'>+</button></div></div><div class='card' data-name='family bucket'>
+<img src='images/23.png'>
+<h3>Family Bucket</h3><p>Prepared fresh with quality ingredients and served ready to enjoy.</p><b>Rs 1999</b>
+<div><button onclick='chg(22,-1)'>-</button> <span id='q22'>0</span> <button onclick='chg(22,1)'>+</button></div></div><div class='card' data-name='coke'>
+<img src='images/24.png'>
+<h3>Coke</h3><p>Prepared fresh with quality ingredients and served ready to enjoy.</p><b>Rs 120</b>
+<div><button onclick='chg(23,-1)'>-</button> <span id='q23'>0</span> <button onclick='chg(23,1)'>+</button></div></div><div class='card' data-name='sprite'>
+<img src='images/25.png'>
+<h3>Sprite</h3><p>Prepared fresh with quality ingredients and served ready to enjoy.</p><b>Rs 120</b>
+<div><button onclick='chg(24,-1)'>-</button> <span id='q24'>0</span> <button onclick='chg(24,1)'>+</button></div></div><div class='card' data-name='water'>
+<img src='images/26.png'>
+<h3>Water</h3><p>Prepared fresh with quality ingredients and served ready to enjoy.</p><b>Rs 80</b>
+<div><button onclick='chg(25,-1)'>-</button> <span id='q25'>0</span> <button onclick='chg(25,1)'>+</button></div></div><div class='card' data-name='chocolate cake'>
+<img src='images/27.png'>
+<h3>Chocolate Cake</h3><p>Prepared fresh with quality ingredients and served ready to enjoy.</p><b>Rs 350</b>
+<div><button onclick='chg(26,-1)'>-</button> <span id='q26'>0</span> <button onclick='chg(26,1)'>+</button></div></div><div class='card' data-name='ice cream cup'>
+<img src='images/28.png'>
+<h3>Ice Cream Cup</h3><p>Prepared fresh with quality ingredients and served ready to enjoy.</p><b>Rs 220</b>
+<div><button onclick='chg(27,-1)'>-</button> <span id='q27'>0</span> <button onclick='chg(27,1)'>+</button></div></div></div><footer><b>Total Rs <span id=t>0</span></b><button onclick='o()'>Order WhatsApp</button></footer><script>
+const owner='923275769505',menu=[['Small Chicken Pizza',899],['Medium Chicken Pizza',1499],['Large Chicken Pizza',2199],['Small Pepperoni Pizza',999],['Medium Pepperoni Pizza',1699],['Large Pepperoni Pizza',2399],['Zinger Burger',650],['Chicken Cheese Burger',750],['Beef Burger',720],['Double Beef Burger',980],['Crispy Burger',580],['Small Fries',180],['Regular Fries',280],['Large Fries',380],['Loaded Fries',450],['Chicken Shawarma',320],['Beef Shawarma',380],['Club Sandwich',480],['Hot Dog',300],['Chicken Wrap',390],['2pc Fried Chicken',450],['4pc Fried Chicken',850],['Family Bucket',1999],['Coke',120],['Sprite',120],['Water',80],['Chocolate Cake',350],['Ice Cream Cup',220]],cart={};
+function chg(i,d){cart[i]=Math.max(0,(cart[i]||0)+d);document.getElementById('q'+i).textContent=cart[i];u();}
+function u(){let x=0;for(let i in cart)x+=cart[i]*menu[i][1];t.textContent=x;}
+function f(){
+let v=document.getElementById('s').value.toLowerCase().trim();
+document.querySelectorAll('.card').forEach(c=>{
+let n=c.dataset.name.toLowerCase();
+let t=c.querySelector('h3').textContent.toLowerCase();
+c.style.display=(n.includes(v)||t.includes(v))?'block':'none';
+});
+}
+function o(){let l=[],tt=0;for(let i in cart)if(cart[i]){l.push(cart[i]+' x '+menu[i][0]+' = Rs '+cart[i]*menu[i][1]);tt+=cart[i]*menu[i][1];}if(!l.length)return alert('Select items');location='https://wa.me/'+owner+'?text='+encodeURIComponent('FoodFaster Order\n\n'+l.join('\n')+'\n\nTotal: Rs '+tt);}
+</script></body></html>
